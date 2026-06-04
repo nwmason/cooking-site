@@ -2,7 +2,6 @@
   "title": "Chili",
   "description": "Hearty beef chili with beans.",
   "image": "images/chili.jpg",
-  "cookTime": "45 min",
   "servings": 6,
 
   "nutrition": {
@@ -26,7 +25,5 @@
     "Cook onions.",
     "Add tomatoes and beans.",
     "Simmer for 30 minutes."
-  ],
-
-  "notes": "Even better the next day."
+  ]
 }

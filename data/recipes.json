@@ -10,5 +10,12 @@
         "title": "Pancakes",
         "description": "Fluffy breakfast favorite.",
         "image": "images/pancakes.jpg"
+    },
+
+    {
+        "slug": "pasta-primavera",
+        "title": "Chicken Pasta Primavera",
+        "description": "Fresh vegetables in a cream sauce.",
+        "image": "images/pancakes.jpg"
     }
 ]

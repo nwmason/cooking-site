@@ -49,11 +49,6 @@ function renderRecipe() {
 
         <p>${recipeData.description}</p>
 
-        <div class="recipe-meta">
-            <span>⏱️ ${recipeData.cookTime}</span>
-            <span>🍽️ ${recipeData.servings}</span>
-        </div>
-
         <div class="scale-controls">
             <button data-scale="1" class="active">1x</button>
             <button data-scale="2">2x</button>
@@ -186,7 +181,7 @@ function renderNutrition() {
 
             <div class="nutrition-row">
                 <span>Total Carbohydrates</span>
-                <strong>${n.carbohydrates}</strong>
+                <strong>${n.carbs}</strong>
             </div>
 
             <div class="nutrition-row">

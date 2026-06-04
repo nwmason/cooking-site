@@ -1,0 +1,40 @@
+{
+  "title": "Chicken Pasta Primavera",
+  "description": "Throw some veggies together in a heavy cream based parmesan sauce.",
+  "image": "images/chili.jpg",
+  "servings": 4,
+
+  "nutrition": {
+  "calories": 760,
+  "protein": "52g",
+  "carbs": "51g",
+  "fat": "39g",
+  "saturatedFat": "20g",
+  "cholesterol": "220mg",
+  "fiber": "4g",
+  "sodium": "1,150mg",
+  "sugar": "5"
+  },
+
+  "ingredients": [
+    "2 boneless, skinless chicken breasts (about 680g)",
+    "1 tsp dried oregano",
+    "1 tsp kosher salt",
+    "½ tsp garlic powder",
+    "½ tsp black pepper",
+    "1 Tbsp olive oil",
+    "8 oz. dry pasta",
+    "2 Tbsp salted butter",
+    "2 cloves of minced garlic",
+    "1 cup grape tomatoes, halved",
+    "1 zucchini, sliced and halved",
+    "½ tsp Better Than Bouillion mixed with ½ cup of water (normal chicken broth works too)",
+    "½ cup grated parmesan cheese",
+    "1 cup heavy cream",
+    "½ cup frozen peas"
+  ],
+
+  "instructions": [
+
+  ]
+}
