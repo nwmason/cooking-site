@@ -1,0 +1,32 @@
+{
+  "title": "Chili",
+  "description": "Hearty beef chili with beans.",
+  "image": "images/chili.jpg",
+  "cookTime": "45 min",
+  "servings": 6,
+
+  "nutrition": {
+  "calories": 420,
+  "protein": "32g",
+  "carbs": "18g",
+  "fat": "24g",
+  "fiber": "6g",
+  "sodium": "680mg"
+  },
+
+  "ingredients": [
+    "2 lbs ground beef",
+    "1 onion",
+    "2 cans beans",
+    "1 can tomatoes"
+  ],
+
+  "instructions": [
+    "Brown the beef.",
+    "Cook onions.",
+    "Add tomatoes and beans.",
+    "Simmer for 30 minutes."
+  ],
+
+  "notes": "Even better the next day."
+}

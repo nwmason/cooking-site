@@ -1,0 +1,14 @@
+[
+    {
+        "slug": "chili",
+        "title": "Chili",
+        "description": "Hearty beef chili.",
+        "image": "images/chili.jpg"
+    },
+    {
+        "slug": "pancakes",
+        "title": "Pancakes",
+        "description": "Fluffy breakfast favorite.",
+        "image": "images/pancakes.jpg"
+    }
+]
