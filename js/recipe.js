@@ -26,7 +26,7 @@ async function loadRecipe() {
     currentStep = 0;
 
     setupScrollSync();
-    highlightStep(true);
+    highlightStep(false);
 }
 
 
@@ -208,28 +208,14 @@ function setupTapNavigation() {
 
     document.addEventListener("click", (e) => {
 
-        const stepsList = document.getElementById("steps-list");
-        if (!stepsList) return;
-
         if (!e.target.closest("#steps-list")) return;
 
-        const rect = stepsList.getBoundingClientRect();
-        const y = e.clientY - rect.top;
-        const height = rect.height;
+        const viewportHeight = window.innerHeight;
+        const tapY = e.clientY;
 
-        const topZone = height * 0.25;
-        const bottomZone = height * 0.75;
-
-        if (y < topZone) {
-            // BACK
+        if (tapY < viewportHeight * 0.35) {
             currentStep = Math.max(0, currentStep - 1);
-        }
-        else if (y > bottomZone) {
-            // FORWARD
-            currentStep = Math.min(steps.length - 1, currentStep + 1);
-        }
-        else {
-            // middle = forward (safe default)
+        } else {
             currentStep = Math.min(steps.length - 1, currentStep + 1);
         }
 
