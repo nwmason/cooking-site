@@ -1,0 +1,44 @@
+{
+  "title": "Sheet Pan Chicken Fajitas",
+  "description": "Enough for 8 fajitas total, 2 per serving.",
+  "image": "images/chicken-fajitas.jpg",
+  "servings": 4,
+
+  "nutrition": {
+  "calories": 420,
+  "protein": "32g",
+  "carbs": "18g",
+  "fat": "24g",
+  "fiber": "6g",
+  "sodium": "680mg"
+  },
+
+  "ingredients": [
+    "_Fajita Seasoning",
+    "1 Tbsp chili powder",
+    "½ Tbsp parpika",
+    "½ tsp onion powder",
+    "¼ tsp garlic powder",
+    "¼ tsp cumin",
+    "¼ tsp cayenne pepper",
+    "1 tsp sugar",
+    "½ tbsp salt",
+
+    "_Fajitas",
+    "2 small yellow onions",
+    "3 bell peppers, mixed color",
+    "1 lb chicken breast (453g)",
+    "2 Tbsp vegetable oil",
+    "1 lime, or lime juice",
+    "8 6-inch tortillas",
+    "Feta cheese, for finishing"
+  ],
+
+  "instructions": [
+    "Preheat oven to 400ºF. Mix the spices for the fajita seasoning in a small bowl and set aside.",
+    "Cut the onion and bell peppers into ¼-inch wide strips. Slice the chicken breast into thin strips. Add the chicken and vegetables to a large baking sheet.",
+    "Drizzle 2 Tbsp cooking oil over the chicken and vegetables, then sprinkle the fajita seasoning mix over top. Toss ingredients until everything is well coated and seasoned. Spread chicken and vegetables over the baking sheet evenly.",
+    "Once oven is preheated, bake for 35-40 minutes, pulling to stir with metal tongs halfway through. Squeeze lime juice over top once done.",
+    "Serve on 6-inch tortillas and top with feta, or your choice of finishing toppings (sour crea, cilantro, extra lime juice)."
+  ]
+}

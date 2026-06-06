@@ -81,30 +81,158 @@ function renderRecipe() {
 
 function renderIngredients(checkedStates = []) {
 
-    return originalIngredients.map((item, index) => `
-        <label class="ingredient">
-            <input
-                type="checkbox"
-                ${checkedStates[index] ? "checked" : ""}
-            >
-            <span>${scaleIngredient(item, currentScale)}</span>
-        </label>
-    `).join("");
+    let checkboxIndex = 0;
+
+    return originalIngredients.map(item => {
+
+        // Header
+        if (item.startsWith("_")) {
+            return `
+                <div class="ingredient-section">
+                    ${item.substring(1)}
+                </div>
+            `;
+        }
+
+        const html = `
+            <label class="ingredient">
+                <input
+                    type="checkbox"
+                    ${checkedStates[checkboxIndex] ? "checked" : ""}
+                >
+                <span>${scaleIngredient(item, currentScale)}</span>
+            </label>
+        `;
+
+        checkboxIndex++;
+        return html;
+
+    }).join("");
+}
+
+const FRACTIONS = {
+    "¼": 0.25,
+    "½": 0.5,
+    "¾": 0.75,
+    "⅓": 1 / 3,
+    "⅔": 2 / 3,
+    "⅛": 0.125,
+    "⅜": 0.375,
+    "⅝": 0.625,
+    "⅞": 0.875
+};
+
+function parseQuantity(text) {
+
+    // 1½
+    let match = text.match(/^(\d+)([¼½¾⅓⅔⅛⅜⅝⅞])/);
+    if (match) {
+        return {
+            value: parseInt(match[1]) + FRACTIONS[match[2]],
+            match: match[0]
+        };
+    }
+
+    // 1 1/2
+    match = text.match(/^(\d+)\s+(\d+)\/(\d+)/);
+    if (match) {
+        return {
+            value:
+                parseInt(match[1]) +
+                parseInt(match[2]) / parseInt(match[3]),
+            match: match[0]
+        };
+    }
+
+    // 1/2
+    match = text.match(/^(\d+)\/(\d+)/);
+    if (match) {
+        return {
+            value: parseInt(match[1]) / parseInt(match[2]),
+            match: match[0]
+        };
+    }
+
+    // ½
+    match = text.match(/^([¼½¾⅓⅔⅛⅜⅝⅞])/);
+    if (match) {
+        return {
+            value: FRACTIONS[match[1]],
+            match: match[0]
+        };
+    }
+
+    // 2 or 2.5
+    match = text.match(/^(\d+(\.\d+)?)/);
+    if (match) {
+        return {
+            value: parseFloat(match[0]),
+            match: match[0]
+        };
+    }
+
+    return null;
+}
+
+function formatQuantity(value) {
+
+    const whole = Math.floor(value);
+    const fraction = value - whole;
+
+    const fractions = [
+        [0.125, "⅛"],
+        [0.25, "¼"],
+        [1 / 3, "⅓"],
+        [0.375, "⅜"],
+        [0.5, "½"],
+        [0.625, "⅝"],
+        [2 / 3, "⅔"],
+        [0.75, "¾"],
+        [0.875, "⅞"]
+    ];
+
+    const closest = fractions.find(
+        ([decimal]) => Math.abs(fraction - decimal) < 0.05
+    );
+
+    if (!closest) {
+        return Number(value.toFixed(2)).toString();
+    }
+
+    const symbol = closest[1];
+
+    if (whole === 0) {
+        return symbol;
+    }
+
+    return `${whole}${symbol}`;
+}
+
+function scaleGramWeights(text, factor) {
+
+    return text.replace(
+        /\((\d+(?:\.\d+)?)g\)/gi,
+        (_, grams) => `(${Math.round(parseFloat(grams) * factor)}g)`
+    );
 }
 
 function scaleIngredient(text, factor) {
 
-    const match = text.match(/^(\d+(\.\d+)?)/);
+    const quantity = parseQuantity(text);
 
-    if (!match) return text;
+    let result = text;
 
-    const number = parseFloat(match[0]);
-    const scaled = number * factor;
+    if (quantity) {
 
-    return text.replace(
-        /^(\d+(\.\d+)?)/,
-        scaled % 1 === 0 ? scaled : scaled.toFixed(2)
-    );
+        const scaledValue = quantity.value * factor;
+
+        result = result.replace(
+            quantity.match,
+            formatQuantity(scaledValue)
+        );
+    }
+
+    return scaleGramWeights(result, factor);
 }
 
 function setupScaling() {

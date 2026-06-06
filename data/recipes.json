@@ -1,21 +1,15 @@
 [
     {
-        "slug": "chili",
-        "title": "Chili",
-        "description": "Hearty beef chili.",
-        "image": "images/chili.jpg"
-    },
-    {
-        "slug": "pancakes",
-        "title": "Pancakes",
-        "description": "Fluffy breakfast favorite.",
-        "image": "images/pancakes.jpg"
-    },
-
-    {
         "slug": "pasta-primavera",
         "title": "Chicken Pasta Primavera",
         "description": "Fresh vegetables in a cream sauce.",
-        "image": "images/pancakes.jpg"
+        "image": "images/pasta-primavera.jpg"
+    },
+
+    {
+        "slug": "chicken-fajitas",
+        "title": "Sheet Pan Chicken Fajitas",
+        "description": "Fresh vegetables in a cream sauce.",
+        "image": "images/chicken-fajitas.jpg"
     }
 ]

@@ -250,6 +250,21 @@ mark {
     font-size: 1.05rem;
 }
 
+.ingredient-section {
+    grid-column: 1 / -1;
+
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: var(--accent);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 0.25rem;
+}
+
 @media (max-width: 480px) {
     .ingredients {
         grid-template-columns: 1fr;
