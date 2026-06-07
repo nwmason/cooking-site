@@ -1,17 +1,20 @@
 {
   "title": "Sheet Pan Chicken Fajitas",
-  "description": "Enough for 8 fajitas total, 2 per serving.",
+  "description": "Enough for 8 fajitas total, 2 per serving. Nutrition label does NOT include feta, or any other toppings added on.",
   "image": "images/chicken-fajitas.jpg",
   "servings": 4,
 
   "nutrition": {
-  "calories": 420,
-  "protein": "32g",
-  "carbs": "18g",
-  "fat": "24g",
-  "fiber": "6g",
-  "sodium": "680mg"
-  },
+  "calories": 430,
+  "protein": "33g",
+  "carbs": "41g",
+  "fat": "15g",
+  "saturatedFat": "3g",
+  "cholesterol": "100mg",
+  "fiber": "5g",
+  "sodium": "1300mg",
+  "sugar": "7g"
+},
 
   "ingredients": [
     "_Fajita Seasoning",

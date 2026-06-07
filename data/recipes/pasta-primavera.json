@@ -1,7 +1,7 @@
 {
   "title": "Chicken Pasta Primavera",
   "description": "Throw some veggies together in a heavy cream based parmesan sauce.",
-  "image": "images/chili.jpg",
+  "image": "images/pasta-primavera.jpg",
   "servings": 4,
 
   "nutrition": {
@@ -13,7 +13,7 @@
   "cholesterol": "220mg",
   "fiber": "4g",
   "sodium": "1,150mg",
-  "sugar": "5"
+  "sugar": "5g"
   },
 
   "ingredients": [

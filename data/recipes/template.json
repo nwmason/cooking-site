@@ -5,12 +5,15 @@
   "servings": 6,
 
   "nutrition": {
-  "calories": 420,
-  "protein": "32g",
-  "carbs": "18g",
-  "fat": "24g",
-  "fiber": "6g",
-  "sodium": "680mg"
+  "calories": 0,
+  "protein": "0g",
+  "carbs": "0g",
+  "fat": "0g",
+  "saturatedFat": "0g",
+  "cholesterol": "0mg",
+  "fiber": "0g",
+  "sodium": "0mg",
+  "sugar": "0g"
   },
 
   "ingredients": [
