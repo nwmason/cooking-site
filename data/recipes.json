@@ -3,13 +3,20 @@
         "slug": "pasta-primavera",
         "title": "Chicken Pasta Primavera",
         "description": "Fresh vegetables in a cream sauce.",
-        "image": "images/pasta-primavera.jpg"
+        "image": "images/pasta-primavera.png"
     },
 
     {
         "slug": "chicken-fajitas",
         "title": "Sheet Pan Chicken Fajitas",
         "description": "Fresh vegetables in a cream sauce.",
-        "image": "images/chicken-fajitas.jpg"
+        "image": "images/chicken-fajitas.png"
+    },
+
+        {
+        "slug": "firecracker-chicken",
+        "title": "Firecracker Chicken",
+        "description": "Fresh vegetables in a cream sauce.",
+        "image": "images/firecracker-chicken.png"
     }
 ]

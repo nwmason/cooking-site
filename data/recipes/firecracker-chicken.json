@@ -1,0 +1,39 @@
+{
+  "title": "Firecracker Chicken and Rice",
+  "description": "Sweet and Mildly Spicy sauced Chicken with Rice, add whatever veggies you have!",
+  "image": "images/firecracker-chicken.png",
+  "servings": 4,
+
+  "nutrition": {
+  "calories": 738,
+  "protein": "43g",
+  "carbs": "91g",
+  "fat": "19g",
+  "saturatedFat": "3g",
+  "cholesterol": "125mg",
+  "fiber": "1g",
+  "sodium": "1050mg",
+  "sugar": "15g"
+},
+
+  "ingredients": [
+    "2 boneless, skinless chicken breasts (680g)",
+    "1 tsp garlic powder",
+    "1 tsp salt",
+    "1 tsp black pepper",
+    "¼ cup vegetable oil",
+    "½ cup buffalo sauce",
+    "¼ cup brown sugar",
+    "1 Tbsp apple cider vinegar",
+    "¼ tsp crushed red pepper flakes"
+  ],
+
+  "instructions": [
+    "Measure out 2 cups of dry, extra long grain white rice. Rinse, then begin cooking in rice cooker.",
+    "Cut chicken into 1 inch cubes, coat and mix in a bowl with seasoning (garlic powder, salt, pepper). Begin heating a large pan over medium-high heat.",
+    "Add oil to hot pan, then add chicken. Work in batches to avoid overcrowding. Cook 3-4 minutes on one side.",
+    "Flip pieces over and cook additional 3-4 minutes. Remove chicken and place on a plate for portioning later.",
+    "Pour buffalo sauce, brown sugar, apple cider vinegar, and red pepper flakes into skillet. Stir until sugar is dissolved and sauce is thick, ensuring to scrape the chicken bits off the pan into the sauce.",
+    "Place chicken back into skillet and stir, coating in the sauce. back to a tared plate and portion into 4 equal portions. Serve on top of 1½ cups of cooked rice per serving."
+  ]
+}
